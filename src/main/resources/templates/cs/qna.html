@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="/layout.html">
+<head>
+    <meta charset="UTF-8">
+    <title>REST Cinema</title>
+    <link th:href="@{/css/header.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/cs/css/cs.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/footer.css}" rel="stylesheet" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var registerBtn = document.querySelector('.button.purple.large');
+
+            registerBtn.addEventListener('click', function() {
+                alert('등록되었습니다.');
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<!-- qna 본문 시작 -->
+<div class="container has-lnb" layout:fragment="content">
+    <div class="page-util">
+        <div class="inner-wrap">
+            <div class="location">
+                <span>Home</span>
+                <a th:href="@{/cs/index}" title="고객센터 페이지로 이동">고객센터</a>
+                <a th:href="@{/cs/qna}" title="1:1 문의 페이지로 이동">1:1 문의</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner-wrap">
+        <div th:replace="~{/cs/fragments/_aside.html}"></div>
+
+        <div id="contents">
+            <h2 class="tit">1:1 문의</h2>
+            <div class="mypage-infomation mb30">
+                <ul class="dot-list">
+                    <li><span style="font-weight: bold;">고객님의 문의에 답변하는 직원은 <span style="color: #EB323A;">고객 여러분의 가족 중 한 사람일 수 있습니다.</span></span><br>
+                        고객의 언어폭력(비하, 욕설, 협박, 성희롱 등)으로부터 직원을 보호하기 위해<br>
+                        관련 법에 따라 수사기관에 필요한 조치를 요구할 수 있으며, 형법에 의해 처벌 대상이 될 수 있습니다.<br>
+                    </li>
+                    <br>
+                    <li>문의하시기 전 FAQ를 확인하시면 궁금증을 더욱 빠르게 해결하실 수 있습니다. </li>
+                </ul>
+            </div>
+            <form name="regFrm" th:action="@{/cs/qna}" method="post">
+                <input type="hidden" name="inqLclCd" value="INQD01">
+                <input type="hidden" name="custInqStatCd" value="INQST1">
+                <input type="hidden" name="cdLvl" value="3">
+                <input type="hidden" name="fileNo" value="">
+
+                <div class="table-wrap mt10">
+                    <table class="board-form va-m">
+                        <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                            <col style="width:150px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label>문의유형</label> <em class="font-orange">*</em>
+                                </th>
+                                <td colspan="3">
+                                    <div>
+                                        <form>
+                                            <select name="qnaCate" >
+                                                <!--<option >문의유형 선택</option>-->
+                                                <option >영화 예매</option>
+                                                <option >할인혜택</option>
+                                                <option >결제수단/관람권</option>
+                                                <option >멤버십</option>
+                                                <option >VIP</option>
+                                                <option >극장/특별관</option>
+                                                <option >스토어</option>
+                                                <option >홈페이지/모바일</option>
+                                                <option >기프티카드</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="name">이름</label> <em class="font-orange">*</em>
+                                </th>
+                                <td>
+                                    <input type="text" id="name" name="writer" class="input-text w150px" th:value=${#authentication.principal.member.name} maxlength="30" readonly>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <label for="qnaCustInqTitle">제목</label> <em class="font-orange">*</em></th>
+                                <td colspan="3"><input type="text" name="title" id="qnaCustInqTitle" class="input-text" maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="textarea">내용</label> <em class="font-orange">*</em></th>
+                                <td colspan="3">
+                                    <div class="textarea">
+                                        <div id="textarea-notice" style="color: #999999; margin-left: 10px;">
+                                            <ul>- 문의내용에 개인정보(이름,연락처,카드번호 등)가 포함되지 않도록 유의하시기 바랍니다.</ul>
+                                        </div>
+                                        <textarea id="textarea" name="content" rows="5" cols="30" title="내용입력" class="input-textarea"></textarea>
+                                        <div class="util">
+                                            <p class="count">
+                                                <span id="textareaCnt">0</span> / 2000
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-group pt40">
+                    <button type="submit" class="button purple large">등록</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- qna 본문 끝 -->
+
+</body>
+</html>

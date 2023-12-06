@@ -1,0 +1,318 @@
+/* member 공통 */
+header {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+#member {
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+#member > div > nav > p {
+  float: right;
+  font-size: 11px;
+  margin-top: -20px;
+  color: #888;
+}
+
+#member > div > nav > p > strong {
+  font-weight: bold;
+}
+
+#member .btnConfirm {
+  padding: 6px;
+  background-color: #fff;
+  border: 1px solid #067dfd;
+  color: #067dfd;
+  border-radius: 2px;
+}
+
+#member .btnCancel {
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+#member .btnCancel:hover {
+  background-color: #f7f7f7;
+}
+
+#member .btnNext {
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background-color: #067dfd;
+  border: 1px solid #0063ce;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#member .btnNext:hover {
+  background-color: #036dde;
+}
+.modal {
+    display: none;
+}
+/* member > .register */
+#member > .register {
+  width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#member > .register > nav {
+  border-bottom: 2px solid #503396;
+}
+
+#member > .register > nav > h1 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+#member > .register table {
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+  border-top: 1px solid #b6bdc7;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#member > .register table * {
+}
+#member > .register table caption {
+  text-align: left;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+#member > .register table th {
+  width: 200px;
+  padding: 20px 20px;
+  vertical-align: top;
+  background: #f4f6f9;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.4;
+  border-bottom: 1px solid #dfe5ed;
+  word-break: break-word;
+  font-size: 14px;
+}
+#member > .register table td {
+  position: relative;
+  vertical-align: middle;
+  padding: 10px 20px;
+  text-align: left;
+  line-height: 1.4;
+  border-bottom: 1px solid #dfe5ed;
+  word-break: break-word;
+  font-size: 14px;
+  font-weight: 500;
+}
+#member > .register table input {
+  padding: 0 8px;
+  height: 31px;
+  font-size: 14px;
+  border: 1px solid #dfe5ed;
+  vertical-align: middle;
+}
+#member > .register table label {
+  display: inline-block;
+  width: 60px;
+  font-size: 17px;
+}
+
+#member > .register table .addr input[name=addr1] {
+  margin-top: 4px;
+}
+#member > .register table .addr input[name=addr2] {
+  margin-top: 4px;
+}
+#member > .register table .addr th {
+  padding-left: 30px;
+}
+
+#member > .register table .essential {
+  color: #503396;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* 아이디 중복확인 버튼 */
+#member > .register #btnCheckUid {
+  background: #503396;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 7px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#member > .register form input[type="submit"] {
+  display: block;
+  background: #503396;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 72px;
+  margin: 40px auto;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* 아이디&비밀번호 찾기 */
+#member > .find {
+  width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#member > .find > nav {
+  border-bottom: 2px solid #ef2a23;
+}
+#member > .find > nav > h1 {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+#member > .find table {
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#member > .find table th {
+  width: 200px;
+  padding: 20px 20px;
+  vertical-align: top;
+  background: #f4f6f9;
+  font-weight: 500;
+  text-align: right;
+  line-height: 1.4;
+  border-bottom: 1px solid #dfe5ed;
+  word-break: break-word;
+  font-size: 14px;
+}
+#member > .find table td {
+  position: relative;
+  vertical-align: middle;
+  padding: 10px 20px;
+  text-align: left;
+  line-height: 1.4;
+  border-bottom: 1px solid #dfe5ed;
+  word-break: break-word;
+  font-size: 14px;
+  font-weight: 500;
+}
+#member > .find table input {
+  padding: 0 8px;
+  height: 31px;
+  font-size: 14px;
+  border: 1px solid #dfe5ed;
+  vertical-align: middle;
+}
+#member > .find #btnEmailCode {
+  background: #503396;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 7px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#member > .find #btnEmailAuth {
+  background: #e7e5e5;
+  color: #222;
+  font-size: 12px;
+  padding: 5px 7px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#member > .find p {
+  margin-top: 10px;
+}
+
+#member > .find .btnArea{
+  margin-top: 45px;
+  padding-left: 326px;
+}
+#member > .find .btnArea > .btnAreaCancel{
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  background: #e7e5e5;
+  color: #222;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 10px 60px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+#member > .find .btnArea > .btnAreaNext {
+  float: left;
+  position: relative;
+  display: block;
+  background: #503396;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 60px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* 아이디&비밀번호 결과 화면 */
+#member > .find .btnResultArea{
+  margin-top: 45px;
+  padding-left: 265px;
+}
+#member > .find .btnResultArea > .btnAreaCancel{
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  background: #e7e5e5;
+  color: #222;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 15px 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+#member > .find .btnResultArea > .btnAreaNext {
+  float: left;
+  position: relative;
+  display: block;
+  background: #503396;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 50px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}

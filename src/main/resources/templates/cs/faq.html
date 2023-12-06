@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="/layout.html">
+<head>
+    <meta charset="UTF-8">
+    <title>REST Cinema</title>
+    <link th:href="@{/css/header.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/cs/css/cs.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/footer.css}" rel="stylesheet" />
+
+    <script>
+        window.onload = function() {
+            var qutElements = document.querySelectorAll('.qut');
+
+            qutElements.forEach(function(qut) {
+                qut.addEventListener('click', function() {
+                    // 모든 'qut' 요소에서 'on' 클래스를 제거합니다.
+                    qutElements.forEach(function(element) {
+                        element.classList.remove('on');
+                    });
+
+                    // 클릭된 'qut' 요소에만 'on' 클래스를 추가합니다.
+                    this.classList.add('on');
+
+                    // 클릭한 'qut' 요소의 다음 형제 요소를 토글합니다.
+                    var awn = this.nextElementSibling;
+                    if (awn.style.display === 'block') {
+                        awn.style.display = 'none';
+                    } else {
+                        awn.style.display = 'block';
+                    }
+                });
+            });
+            var faqLinks = document.querySelectorAll('.faq-link');
+
+            faqLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // 기본 동작을 막음
+                });
+            });
+        };
+    </script>
+
+
+</head>
+<body>
+
+<!-- faq 본문 시작 -->
+<div class="container has-lnb" layout:fragment="content">
+    <div class="page-util">
+        <div class="inner-wrap">
+            <div class="location">
+                <span>Home</span>
+                <a href="/support" title="고객센터 페이지로 이동">고객센터</a>
+                <a href="/support/faq" title="자주 묻는 질문 페이지로 이동">자주 묻는 질문</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="inner-wrap">
+        <!-- aside바 시작 -->
+
+        <div th:replace="~{/cs/fragments/_aside.html}"></div>
+        <!-- aside바 끝 -->
+
+
+        <!-- faq 시작 -->
+        <div id="contents" class="">
+            <h2 class="tit">자주 묻는 질문</h2>
+
+            <!-- input-search-area -->
+            <div class="input-search-area mb30">
+                <div class="input-area">
+                    <label for="search01" class="label">빠른검색</label>
+
+
+                    <div class="board-search w460px">
+                        <input type="search" id="searchTxt" title="검색어를 입력해 주세요." placeholder="검색어를 입력해 주세요." class="input-text" value="" maxlength="15">
+                        <button type="button" id="searchBtn" class="btn-search-input">검색</button>
+                    </div>
+                </div>
+
+                <div class="btn-area">
+
+                </div>
+            </div>
+            <!--// input-search-area -->
+
+
+            <div class="tab-block small mb30">
+                <ul>
+                    <li class="on"><button type="button" class="btn tabBtn" id="totalTab" data-no="" title="전체">전체</button></li>
+                    <li><button type="button" class="btn tabBtn" data-no="88" data-nm="영화예매" title="영화예매">영화예매</button></li><!-- (14) -->
+                    <li><button type="button" class="btn tabBtn" data-no="89" data-nm="할인혜택" title="할인혜택">할인혜택</button></li><!-- (3) -->
+                    <li><button type="button" class="btn tabBtn" data-no="90" data-nm="결제수단/관람권" title="결제수단/관람권">결제수단/관람권</button></li><!-- (6) -->
+                    <li><button type="button" class="btn tabBtn" data-no="91" data-nm="멤버십" title="멤버십">멤버십</button></li><!-- (13) -->
+                    <li><button type="button" class="btn tabBtn" data-no="92" data-nm="VIP" title="VIP">VIP</button></li><!-- (4) -->
+                    <li><button type="button" class="btn tabBtn" data-no="93" data-nm="극장/특별관" title="극장/특별관">극장/특별관</button></li><!-- (8) -->
+                    <li><button type="button" class="btn tabBtn" data-no="95" data-nm="스토어" title="스토어">스토어</button></li><!-- (6) -->
+                    <li><button type="button" class="btn tabBtn" data-no="96" data-nm="홈페이지/모바일" title="홈페이지/모바일">홈페이지/모바일</button></li><!-- (11) -->
+                    <li><button type="button" class="btn tabBtn" data-no="8007" data-nm="기프트카드" title="기프트카드">기프트카드</button></li><!-- (12) -->
+                </ul>
+
+                <input type="hidden" id="bbsTotalCnt" value="77">
+            </div>
+            <!--// 2019-01-15 : 마크업 변경 -->
+
+            <!--// tab-block -->
+
+            <div class="faq-list-box">
+                <div class="faq-list">
+                    <ul>
+                        <th:block th:each="faq:${faqList}">
+                            <li>
+                                <div class="qut">
+                                    <a href="#"  class="faq-link">
+                                        <p class="tit">
+                                            <span class="font-green">[ [[${faq.category}]] ] [[${faq.title}]]</span>
+                                        </p>
+                                        <p class="txt">
+                                            <span class="font-green"></span>
+                                            [[${faq.content}]]
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="awn">
+                                    <p class="cont">
+                                        <span style="font-size:10.0pt">
+                                            <span style="line-height:107%">
+                                                <span>
+                                                    [[${faq.content}]]
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                        </th:block>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- pagination -->
+            <nav class="pagination">
+                <strong class="active">1</strong>
+                <a title="2페이지보기" href="javascript:void(0)" pagenum="2">2</a>
+                <a title="3페이지보기" href="javascript:void(0)" pagenum="3">3</a>
+                <a title="4페이지보기" href="javascript:void(0)" pagenum="4">4</a>
+                <a title="5페이지보기" href="javascript:void(0)" pagenum="5">5</a>
+                <a title="6페이지보기" href="javascript:void(0)" pagenum="6">6</a>
+                <a title="7페이지보기" href="javascript:void(0)" pagenum="7">7</a>
+            </nav>
+            <!--// pagination -->
+
+        </div>
+    </div>
+</div>
+<!--faq 본문 끝-->
+
+</body>
+</html>

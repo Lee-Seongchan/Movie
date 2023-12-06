@@ -1,0 +1,288 @@
+[33mcommit 525344d47409c8cf10c0c71bc3abc5dc9d6e2547[m[33m ([m[1;36mHEAD -> [m[1;32madmin[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: bdf57e5 4449b38
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Wed Dec 6 11:21:33 2023 +0900
+
+    Merge pull request #113 from KBJ97/admin
+    
+    view
+
+[33mcommit 4449b3887747122f1ae0e5a5647abe056226196b[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Wed Dec 6 11:20:58 2023 +0900
+
+    ad
+
+[33mcommit 91cc87ab2e35a33b2976fe2df684a83807d60e80[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Wed Dec 6 11:18:59 2023 +0900
+
+    view
+
+[33mcommit bdf57e54c161600e79ccf0a5d4bee49b87d5eac5[m
+Merge: 201eb14 995fe11
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Wed Dec 6 11:17:25 2023 +0900
+
+    Merge pull request #112 from KBJ97/admin
+    
+    Admin
+
+[33mcommit 995fe11b1ab0385e978bc390859f67d5c12beb4e[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Wed Dec 6 11:16:27 2023 +0900
+
+    asd
+
+[33mcommit 02380d5dc385f31ea9567b5eb519fddddb862b23[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Wed Dec 6 11:09:15 2023 +0900
+
+    view
+
+[33mcommit 201eb1479377900406819ca8d02174f5c6536c32[m
+Merge: 238900c 949a4ae
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Wed Dec 6 10:52:05 2023 +0900
+
+    Merge pull request #108 from KBJ97/admin
+    
+    asd
+
+[33mcommit 949a4ae0f9e63d5f15dfa12a20366c32c82a7880[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Wed Dec 6 10:51:36 2023 +0900
+
+    asd
+
+[33mcommit 238900c33d692f2d4a4960bd641972dd54806fae[m
+Merge: 13e9e6c 597ac90
+Author: mintchoc31 <136421992+mintchoc31@users.noreply.github.com>
+Date:   Wed Dec 6 10:06:15 2023 +0900
+
+    Merge pull request #107 from KBJ97/cs
+    
+    Cs
+
+[33mcommit 597ac900061d15fef9e8becd3eeade1dad1b3e3c[m
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Wed Dec 6 10:04:54 2023 +0900
+
+    23.12.06 병합
+
+[33mcommit c4d8104d68cb4a2704b4713a79848857ec7ece6b[m
+Merge: b7a21a1 3ca8eb0
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Wed Dec 6 10:03:01 2023 +0900
+
+    23.12.06 병합
+
+[33mcommit 3ca8eb0f2f626da5057eb8c1c19991328dd2d9fc[m
+Merge: 24f48af 13e9e6c
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Wed Dec 6 10:00:28 2023 +0900
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       src/main/resources/templates/cs/qna.html
+
+[33mcommit 13e9e6cee61ad4e171ccb2f35453b12e11e4cae3[m[33m ([m[1;32mmain[m[33m)[m
+Merge: ebba7c5 5ee1499
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Wed Dec 6 01:28:53 2023 +0900
+
+    Merge pull request #106 from KBJ97/admin
+    
+    view 작업
+
+[33mcommit 5ee1499299ed078aa48d1fac3c03cce2aeb43208[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Wed Dec 6 01:28:21 2023 +0900
+
+    view 작업
+
+[33mcommit ebba7c50c5d3cf273b4e605ad718d0e6e2a77c7e[m
+Merge: 176bf7e b1c9155
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Tue Dec 5 18:37:15 2023 +0900
+
+    Merge pull request #105 from KBJ97/admin
+    
+    고객센터 문의하기 글쓰기 완료
+
+[33mcommit b1c9155ed83809605e9dac856d80ed7ebe8a6781[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Tue Dec 5 18:36:42 2023 +0900
+
+    고객센터 문의하기 글쓰기 완료
+
+[33mcommit 176bf7edbed5556e81ce9c8a1c23cf6f74e783cc[m
+Merge: f95ddad 8527d48
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Tue Dec 5 17:34:26 2023 +0900
+
+    Merge pull request #104 from KBJ97/admin
+    
+    cs확인 그리고 삭제 완료
+
+[33mcommit 8527d4899e4a9376e6aa4c170cd2a43c4606ce5c[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Tue Dec 5 17:33:51 2023 +0900
+
+    cs확인 그리고 삭제 완료
+
+[33mcommit b7a21a13120311ad889366d83262d2cd1edf0c3b[m
+Merge: 5a223e9 24f48af
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Tue Dec 5 11:02:04 2023 +0900
+
+    Merge branch 'main' into cs
+
+[33mcommit 24f48af04ce5f9495f7078a5f4f8da58ca0de5b7[m
+Merge: dd6f90a f95ddad
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Tue Dec 5 11:01:08 2023 +0900
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit f95ddadf14b2af39487927e9526e5ae6d80f66e2[m
+Merge: 11d1d49 b330622
+Author: tngus78901 <136422035+tngus78901@users.noreply.github.com>
+Date:   Mon Dec 4 17:24:54 2023 +0900
+
+    Merge pull request #103 from KBJ97/map
+    
+    오타수정
+
+[33mcommit b330622b60bc43968b1719c620a8f3f8a3cc0fab[m[33m ([m[1;31morigin/map[m[33m)[m
+Author: tngus78901 <tngus78901@gmail.com>
+Date:   Mon Dec 4 17:24:13 2023 +0900
+
+    오타수정
+
+[33mcommit 5a223e95f86d5290ec30e39f996bbe1024a5a917[m
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Mon Dec 4 12:45:22 2023 +0900
+
+    23.12.04 cs notice 글 정렬 수정
+
+[33mcommit db9231ba6f9b8b7609382e06bd4aaedca7df8893[m
+Merge: 28f3140 dd6f90a
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Mon Dec 4 10:03:34 2023 +0900
+
+    Merge branch 'main' into cs
+
+[33mcommit dd6f90a7ff08ef41c2fd2cdba557ea5a0ac89627[m
+Merge: 9937177 11d1d49
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Mon Dec 4 10:02:49 2023 +0900
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit 11d1d49d8c732c1ff7bb070f813a7120a20de9e4[m
+Merge: 4902a18 eeabb4c
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Mon Dec 4 09:11:22 2023 +0900
+
+    Merge pull request #102 from KBJ97/admin
+    
+    공지사항 및 자주묻는 질문 완료
+
+[33mcommit eeabb4cbcc0cc6c88fdbf9f756c6618a1885d7a2[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Mon Dec 4 09:10:48 2023 +0900
+
+    공지사항 및 자주묻는 질문 완료
+
+[33mcommit 4902a187fc87030dbfd337138a6a53eea23c6a0f[m
+Merge: 6f6e1a7 2d733a8
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Mon Dec 4 06:54:43 2023 +0900
+
+    Merge pull request #101 from KBJ97/admin
+    
+    문의하기는 완성
+
+[33mcommit 2d733a831b036726e601c956fd3649c88f04611d[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Mon Dec 4 06:54:00 2023 +0900
+
+    문의하기는 완성
+
+[33mcommit 6f6e1a726ec6bd25c65db8c5ad495527bbf8edec[m
+Merge: 7daeeac 23a3ac5
+Author: KBJ97 <113073333+KBJ97@users.noreply.github.com>
+Date:   Fri Dec 1 15:13:47 2023 +0900
+
+    Merge pull request #100 from KBJ97/member
+    
+    qwe
+
+[33mcommit 23a3ac51695cf8f97dcd5bed0512ca88183c83f2[m
+Author: KBJ <sjn04037@naver.com>
+Date:   Fri Dec 1 15:12:41 2023 +0900
+
+    qwe
+
+[33mcommit 7daeeacfe6dacaa3adf1a23e05d2d69992d411f3[m
+Merge: c8e453d 055a929
+Author: tngus78901 <136422035+tngus78901@users.noreply.github.com>
+Date:   Fri Dec 1 15:09:58 2023 +0900
+
+    Merge pull request #99 from KBJ97/map
+    
+    최종 push
+
+[33mcommit 055a929d1b6e452f470cef8845cfed7fe56f6489[m
+Author: tngus78901 <tngus78901@gmail.com>
+Date:   Fri Dec 1 15:09:20 2023 +0900
+
+    최종 push
+
+[33mcommit 28f3140605209a5d5f4e1ae174af0aa2d531b5e6[m
+Merge: 63377d0 9937177
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Fri Dec 1 12:43:47 2023 +0900
+
+    Merge branch 'main' into cs
+
+[33mcommit 993717771e4f11141abf40874c71dc2a57c8c44d[m
+Merge: 9be0c39 c8e453d
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Fri Dec 1 12:43:25 2023 +0900
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit c8e453d5c6346c81355b44219e63c9a229515e95[m
+Merge: 68221bc 791189b
+Author: Lee-Seongchan <100086310+Lee-Seongchan@users.noreply.github.com>
+Date:   Fri Dec 1 12:40:57 2023 +0900
+
+    Merge pull request #98 from KBJ97/admin
+    
+    VERSION
+
+[33mcommit 791189b143515eaf0ce291aa9f5262f5a0408c97[m
+Author: lseong96 <lseong96@gmail.com>
+Date:   Fri Dec 1 12:40:01 2023 +0900
+
+    asd
+
+[33mcommit 63377d098b018006908b949920c24555f36f7c07[m
+Merge: 76a9811 9be0c39
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Fri Dec 1 12:24:12 2023 +0900
+
+    Merge branch 'main' into cs
+
+[33mcommit 9be0c39c89abd1a0c204ef8c7988f1d4b22fc513[m
+Merge: 8e0f9f1 68221bc
+Author: mintchoc31 <mintchoc31@gmail.com>
+Date:   Fri Dec 1 12:23:01 2023 +0900
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit 76a9811e2a79b54ff8b78d1935396c8f25a7b622[m
+Author: mintchoc31 <mintchoc31@gmai
