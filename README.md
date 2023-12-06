@@ -17,4 +17,7 @@ LOTTE 마지막 자유 주제 영화 사이트 개발<br><br>
 
 [팀원] 김유빈 : 고객센터 프론트 작업, 보고서 및 PPT제작
 
+
+[ 메인 페이지 ]
+
 ![영화 메인 페이지](https://github.com/Lee-Seongchan/Movie/assets/100086310/7883f397-1ecc-470b-b6d0-1f9fa1c5f52f)
