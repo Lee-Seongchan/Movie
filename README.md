@@ -22,3 +22,9 @@ LOTTE 마지막 자유 주제 영화 사이트 개발<br><br>
 [ 메인 페이지 ]
 
 ![영화 메인 페이지](https://github.com/Lee-Seongchan/Movie/assets/100086310/7883f397-1ecc-470b-b6d0-1f9fa1c5f52f)
+
+
+[관리자 메인 페이지]
+
+![관리자 메인](https://github.com/Lee-Seongchan/Movie/assets/100086310/418414b6-b794-456c-ac01-7351c6e51f10)
+
